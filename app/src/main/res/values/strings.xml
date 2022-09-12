@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">Primer Parcial</string>
+
+    <string name="saludo">Bienvenido</string>
+    <string name="acceder">Ingresar</string>
+    <string name="salir">Salir</string>
+    <string name="regresar">Regresar</string>
+    <string name="user">Usuario</string>
+    <string name="contrasenia">Contraseña</string>
+
+    <!--MENU PRINCIPAL / BIENVENIDA-->
+    <string name="menuprin">Menú Principal</string>
+    <string name="acercade">Acerca de...</string>
+    <string name="tele">Televisión</string>
+    <string name="galeria">Galería</string>
+    <string name="camara">Cámara</string>
+    <string name="linterna">Linterna</string>
+    <string name="pestanias">Pestañas</string>
+
+    <!--TELEVISION-->
+    <string name="video1">Video 1</string>
+    <string name="video2">Video 2</string>
+    <string name="video3">Video 3</string>
+
+    <!--CAMARA-->
+    <string name="tomarfoto">Tomar Foto</string>
+    <string name="guardar">Guardar en la Galeía</string>
+
+    <!--PESTANIAS-->
+    <string name="pbar">Progress Bar</string>
+    <string name="ubi">Mi Ubicación</string>
+    <string name="hora">Hora Actual</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+</resources>

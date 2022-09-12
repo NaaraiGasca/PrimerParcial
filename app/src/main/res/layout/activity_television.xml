@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Television">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtTTitulo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/tele"
+                android:textSize="30sp"
+                android:textColor="@color/blue1"
+                android:layout_margin="10dp"
+                tools:ignore="InvalidId" />
+
+            <Button
+                android:id="@+id/btnTVideo1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/video1"
+                android:backgroundTint="@color/blue1"/>
+
+            <Button
+                android:id="@+id/btnTVideo2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/video2"
+                android:backgroundTint="@color/blue1"/>
+
+            <Button
+                android:id="@+id/btnTVideo3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/video3"
+                android:backgroundTint="@color/blue1"/>
+
+            <VideoView
+                android:id="@+id/vdTVideoView1"
+                android:layout_width="400dp"
+                android:layout_height="250dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="6dp"/>
+
+            <VideoView
+                android:id="@+id/vdTVideoView2"
+                android:layout_width="400dp"
+                android:layout_height="250dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="6dp"/>
+
+            <VideoView
+                android:id="@+id/vdTVideoView3"
+                android:layout_width="400dp"
+                android:layout_height="250dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="6dp"/>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</RelativeLayout>

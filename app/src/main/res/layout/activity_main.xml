@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="25dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/saludo"
+                android:textSize="30sp"
+                android:textColor="@color/blue1"/>
+
+            <EditText
+                android:id="@+id/txtMUsuario"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/user"
+                android:inputType="textPersonName"
+                android:layout_margin="10dp"
+                android:importantForAutofill="no"/>
+
+            <EditText
+                android:id="@+id/txtMContrasenia"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/contrasenia"
+                android:inputType="textPassword"
+                android:layout_margin="10dp"
+                android:importantForAutofill="no"/>
+
+            <Button
+                android:id="@+id/btnMAcceder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/acceder"
+                android:layout_margin="10dp"
+                android:backgroundTint="@color/blue1" />
+
+            <Button
+                android:id="@+id/btnMSalir"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/salir"
+                android:layout_margin="10dp"
+                android:backgroundTint="@color/blue1"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

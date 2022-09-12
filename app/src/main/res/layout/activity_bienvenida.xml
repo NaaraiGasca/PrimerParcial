@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Bienvenida">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="25dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtTTitulo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/menuprin"
+                android:textColor="@color/blue1"
+                android:textSize="30sp"
+                tools:ignore="MissingConstraints" />
+
+            <ImageButton
+                android:id="@+id/btnMPAcercade"
+                android:layout_width="360dp"
+                android:layout_height="190dp"
+                android:foregroundGravity="center"
+                android:layout_margin="10dp"
+                android:backgroundTint="@color/blue1"
+                android:src="@drawable/sho"
+                android:tooltipText="@string/acercade"
+                app:layout_constraintTop_toBottomOf="@+id/txtTTitulo"
+                tools:ignore="MissingConstraints" />
+
+            <ImageButton
+                android:id="@+id/btnMPTelevision"
+                android:layout_width="175dp"
+                android:layout_height="130dp"
+                android:foregroundGravity="center"
+                android:layout_margin="10dp"
+                android:backgroundTint="@color/blue1"
+                android:src="@drawable/television"
+                android:tooltipText="@string/tele"
+                app:layout_constraintTop_toBottomOf="@+id/btnMPAcercade"
+                tools:ignore="MissingConstraints" />
+
+            <ImageButton
+                android:id="@+id/btnMPGaleria"
+                android:layout_width="175dp"
+                android:layout_height="130dp"
+                android:foregroundGravity="center"
+                android:layout_margin="10dp"
+                android:backgroundTint="@color/blue1"
+                android:src="@drawable/galeria"
+                android:tooltipText="@string/galeria"
+                app:layout_constraintTop_toBottomOf="@+id/btnMPAcercade"
+                app:layout_constraintStart_toEndOf="@+id/btnMPTelevision"
+                tools:ignore="MissingConstraints" />
+
+            <ImageButton
+                android:id="@+id/btnMPCamara"
+                android:layout_width="175dp"
+                android:layout_height="130dp"
+                android:foregroundGravity="center"
+                android:layout_margin="10dp"
+                android:backgroundTint="@color/blue1"
+                android:src="@drawable/camara"
+                android:tooltipText="@string/camara"
+                app:layout_constraintTop_toBottomOf="@+id/btnMPTelevision"
+                tools:ignore="MissingConstraints" />
+
+            <ImageButton
+                android:id="@+id/btnMPLinterna"
+                android:layout_width="175dp"
+                android:layout_height="130dp"
+                android:foregroundGravity="center"
+                android:layout_margin="10dp"
+                android:backgroundTint="@color/blue1"
+                android:src="@drawable/linterna"
+                android:tooltipText="@string/linterna"
+                app:layout_constraintTop_toBottomOf="@+id/btnMPTelevision"
+                app:layout_constraintStart_toEndOf="@+id/btnMPCamara"
+                tools:ignore="MissingConstraints" />
+
+            <ImageButton
+                android:id="@+id/btnMPPestanias"
+                android:layout_width="175dp"
+                android:layout_height="130dp"
+                android:foregroundGravity="center"
+                android:layout_margin="10dp"
+                android:backgroundTint="@color/blue1"
+                android:src="@drawable/pestanias"
+                android:tooltipText="@string/pestanias"
+                app:layout_constraintTop_toBottomOf="@+id/btnMPCamara"
+                tools:ignore="MissingConstraints" />
+
+            <ImageButton
+                android:id="@+id/btnMPSalir"
+                android:layout_width="175dp"
+                android:layout_height="130dp"
+                android:foregroundGravity="center"
+                android:layout_margin="10dp"
+                android:backgroundTint="@color/blue1"
+                android:src="@drawable/salir"
+                android:tooltipText="@string/salir"
+                app:layout_constraintTop_toBottomOf="@+id/btnMPCamara"
+                app:layout_constraintStart_toEndOf="@+id/btnMPPestanias"
+                tools:ignore="MissingConstraints" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</RelativeLayout>
