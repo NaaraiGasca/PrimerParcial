@@ -27,8 +27,8 @@ public class HoraActual extends Fragment {
     private static final String ARG_PARAM2 = "param2";
 
     // TODO: Rename and change types of parameters
-    private Button btnHora;
-    private TextView txtHora;
+    private String mParam1;
+    private String mParam2;
 
     public HoraActual() {
         // Required empty public constructor
@@ -56,16 +56,31 @@ public class HoraActual extends Fragment {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         if (getArguments() != null) {
-            String fecha_hora = java.text.DateFormat.getTimeInstance().format(Calendar.getInstance().getTime());
-            txtHora.setText(fecha_hora);
+            mParam1 = getArguments().getString(ARG_PARAM1);
+            mParam2 = getArguments().getString(ARG_PARAM2);
         }
     }
+
+    private Button btnHora;
+    private TextView txtHora;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_hora_actual, container, false);
+        View root = inflater.inflate(R.layout.fragment_hora_actual, container, false);
+
+        txtHora = root.findViewById(R.id.txtHHora);
+        btnHora = root.findViewById(R.id.btnHHora);
+        btnHora.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String fecha_hora = java.text.DateFormat.getTimeInstance().format(Calendar.getInstance().getTime());
+                txtHora.setText(fecha_hora);
+            }
+        });
+
+        return root;
     }
 
 }

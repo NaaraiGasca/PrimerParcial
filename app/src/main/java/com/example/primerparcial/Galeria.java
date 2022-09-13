@@ -57,7 +57,7 @@ public class Galeria extends AppCompatActivity {
                 }else{
                     position = imagenUri.size() -1;
                 }
-                //imageIs.setImageURI(imagenUri.get(position));
+                imageIs.setImageURI(imagenUri.get(position));
             }
         });
         btnSig.setOnClickListener(new View.OnClickListener() {
@@ -69,7 +69,7 @@ public class Galeria extends AppCompatActivity {
                 }else{
                     position = 0;
                 }
-                //imageIs.setImageURI(imagenUri.get(position));
+                imageIs.setImageURI(imagenUri.get(position));
             }
         });
     }
